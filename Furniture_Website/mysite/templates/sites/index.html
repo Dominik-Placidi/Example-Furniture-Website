@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <title>Möbel - Manufaktur</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+
+    <header class="header">
+
+        <nav class="navbar container-col">
+
+            <!-- Navigation -->
+            <div class="container-row">
+
+                <div class="container-col">
+                    <h1 class="text--spacing text--color text--shadow heading navbar__heading navbar__heading--brand">Möbel Manufaktur</h1>
+                    <h3 class="text--spacing text--color text--shadow heading navbar__heading navbar__heading--brand">Mustermann</h3>
+                </div>
+    
+                <ul class="navbar__link-list">
+                    <li class="text--spacing text--color text--shadow navbar__list-list-item" data-target="section--furniture">Stile</li>
+                    <li class="text--spacing text--color text--shadow navbar__list-list-item" data-target="section--crafts">Werkstatt</li>
+                    <li class="text--spacing text--color text--shadow navbar__list-list-item" data-target="section--about-us">Über uns</li>
+                    <li class="text--spacing text--color text--shadow navbar__list-list-item" data-target="section--contact">Kontakt</li>
+                </ul>
+
+            </div>
+            <!-- Navigation-End -->
+
+            <!-- Main-Heading -->
+            <div class="container-col gap--sm container--align-center navbar__heading-container">
+                <h1 class="text--color text--shadow navbar__heading navbar__heading--main">Mit der Liebe zum Detail</h1>
+                <h3 class="text--color text--shadow navbar__heading navbar__heading--main navbar__heading--main--sub">Tradition seit 1972</h3>
+            </div>
+            <!-- Main-Heading-End -->
+
+            <!-- Materials -->
+            <div class="container-col gap--sm navbar__materials-container">
+                <span class="text--spacing text--color text--shadow navbar__material">Holz</span>
+                <span class="text--spacing text--color text--shadow navbar__material">Stein</span>
+                <span class="text--spacing text--color text--shadow navbar__material">Leder</span>
+                <span class="text--spacing text--color text--shadow navbar__material">Metall</span>
+                <span class="text--spacing text--color text--shadow navbar__material">Kunststoff</span>
+                <span class="text--spacing text--color text--shadow navbar__material">Bambus, Kork, Rattan</span>
+                <span class="text--spacing text--color text--shadow navbar__material">Wir lassen Ihre Träume wahrwerden</span>
+            </div>
+            <!-- Materials-End -->
+
+        </nav>
+
+    </header>
+
+    {% block content %}
+
+    {% endblock content %}
+    
+    <footer class="footer">
+
+        <div class="container-row gap--sm container--justify-center container--max">
+
+            <p class="text--spacing link footer-text impressum-btn">Impressum</p>
+            <p class="text--spacing link footer-text privacy_policy-btn">Datenschutzerklärung</p>
+            
+        </div>
+
+        <p class="text--color--black text--spacing footer-copyright">© 2024 Möbelmanufaktur</p>
+
+    </footer>
+
+    <ul class="message_list">
+    </ul>
+
+    <img class="to_the_top-icon" src="./static/images/to_the_top_icon.png" alt="Zur Navigationleiste">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/navbar_animation.js' %}"></script>
+    <script src="{% static 'js/furniture_animation.js' %}"></script>
+    <script src="{% static 'js/garage_video_animation.js' %}"></script>
+    <script src="{% static 'js/request.js' %}"></script>
+    <script src="{% static 'js/impressum_privacy_policy.js' %}"></script>
+</body>
+</html>

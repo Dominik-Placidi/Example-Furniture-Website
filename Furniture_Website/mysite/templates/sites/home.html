@@ -1,0 +1,251 @@
+{% extends 'sites/index.html' %}
+{% load static %}
+{% block content %}
+
+<main class="main">
+        
+    <section class="section section--furniture">
+
+        <div class="container-row container--wrap">
+
+            <div class="container-col gap--sm furniture__text-container">
+                <h1 class="text--color--black heading heading--main">Vintage, Modern, Retro</h1>
+                <h3 class="text--color--black heading heading--main--sub">Wir treffen jeden Stil</h3>
+                <p class="text text--justify text--color--black">Entdecken Sie unsere exklusive Möbelkollektion, in der wir die Grenzen zwischen Vintage, Modern und Retro verschmelzen lassen. Unsere Möbelmanufaktur kombiniert gekonnt die zeitlosen Elemente vergangener Epochen mit modernen Designs und einem Hauch von Retro-Charme. Bei uns finden Sie einzigartige Möbelstücke, die jeden Stil treffen und Ihr Zuhause in ein individuelles Wohnparadies verwandeln. Lassen Sie sich von unserer Leidenschaft für hochwertige Handwerkskunst und zeitlose Ästhetik inspirieren. Willkommen in der Welt der Möbel, in der Vintage, Modern und Retro auf faszinierende Weise harmonieren.</p>
+            </div>
+
+            <div class="container-col furniture__img-container">
+
+                <img class="furniture__img furniture__img--1" src="{% static 'images/furniture_1.jpg' %}" alt="Vintage-Chair">
+                <img class="furniture__img furniture__img--2" src="{% static 'images/furniture_5.jpg' %}" alt="Vintage-Desk">
+                <img class="furniture__img furniture__img--3" src="{% static 'images/furniture_6.jpg' %}" alt="Modern-Chairs">
+                <img class="furniture__img furniture__img--4" src="{% static 'images/furniture_4.jpg' %}" alt="Vintage-Chair">
+
+            </div>
+
+        </div>
+
+        <div class="container-col container--max image-card-container">
+
+            <div class="image-card">
+                <img class="image-card-img" src="{% static 'images/furniture_2.jpg' %}" alt="White-Modern-Couch">
+                <div class="container-col image-card-text-container">
+                    <h1 class="text--color text--shadow heading heading--main image-card-heading">Elegant, Zeitlos und Modern</h1>
+                    <p class="text text--color text--shadow image-card-text">Ein modernes weißes Ledersofa verleiht Ihrem Wohnzimmer einen Hauch von Eleganz und zeitlosem Stil.</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img class="image-card-img" src="{% static 'images/furniture_3.jpg' %}" alt="White-Modern-Couch">
+                <div class="container-col image-card-text-container">
+                    <h1 class="text--color text--shadow heading heading--main image-card-heading">
+                        Retro-Chic: 
+                        <br>
+                        Stühle mit edlen Holzbeinen und nostalgischen Mustern</h1>
+                    <p class="text text--color text--shadow image-card-text">Stühle mit edlen Holzbeinen und nostalgischen Mustern sind die perfekte Ergänzung für jeden Raum, um ihm einen Hauch von Retro-Chic zu verleihen.</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img class="image-card-img" src="{% static 'images/furniture_7.jpg' %}" alt="White-Modern-Couch">
+               <div class="container-col image-card-text-container">
+                <h1 class="text--color text--shadow heading heading--main image-card-heading">
+                    Klassisches Bruinleder-Sofa: 
+                    <br>
+                    zeitlose Eleganz für Ihr Zuhause</h1>
+                <p class="text text--color text--shadow image-card-text">Ein edles braunes Ledersofa steht im Mittelpunkt des Raumes, umgeben von warmen, einladenden Farben. Die feinen Nähte und das glänzende Leder verleihen dem Sofa eine zeitlose Eleganz und schaffen eine gemütliche Atmosphäre im Raum.</p>
+               </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <section class="section section--crafts">
+
+        <div class="container-col container--max gap--m">
+
+            <div class="container-row container--wrap">
+                   
+                <div class="container-col container--content crafts__media-container container--align-startn crafts_garage_img-container">
+                    <img class="crafts-img" src="./static/images/garage.jpg" alt="">
+                </div>
+
+                <div class="container-col gap--sm container--align-end crafts-text-container">
+                    <h1 class="text--color--black heading heading--main">Unsere Werkstatt</h1>
+                    <h3 class="text--color--black heading heading--main heading--main--sub">wir machen noch alles selbst</h3>
+                    <p class="text text--color--black crafts-text">
+                        In unserer Möbelmanufaktur legen wir großen Wert auf Qualitätssicherung und Leidenschaft, um die Tradition fortzusetzen. Alle Bearbeitungsschritte finden in unserem Haus statt, vom Holzzuschnitt über die Holzbearbeitung, Metallbearbeitung, Lackierung, Materialprüfung bis hin zu Leder- und Kunststoffarbeiten.
+                    </p>
+                </div> 
+
+            </div>
+
+            <div class="container-row container--wrap">
+
+                <div class="container-col container--content crafts__media-container container--align-start">
+                    <video class="crafts-video" muted loop>
+                        <source src="{% static 'videos/lether.mp4' %}" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="container-col container--content crafts__media-container container--align-end">
+                    <video class="crafts-video" muted loop>
+                        <source src="{% static 'videos/saw.mp4' %}" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="container-row container--wrap">
+
+                <div class="container-col gap--sm container--align-start crafts-text-container">
+                    <h1 class="text--color--black heading heading--main">Fachliche Weiterbildungen</h1>
+                    <h3 class="text--color--black heading heading--main heading--main--sub">für konstante Qualität</h3>
+                    <p class="text text--color--black crafts-text">
+                        In unserer Möbelmanufaktur legen wir großen Wert auf fachliche Weiterbildung, denn nur so können wir stetige Qualität garantieren. Unsere Mitarbeiter werden regelmäßig geschult und weitergebildet, um immer auf dem neuesten Stand der Technik und Trends zu sein. Durch diese kontinuierliche Qualifizierung können wir Ihnen hochwertige und individuelle Möbelstücke bieten, die höchsten Ansprüchen gerecht werden.
+                    </p>
+                </div>
+
+                <div class="container-col container--content crafts__media-container container--align-end crafts_garage_img-container crafts_garage_img-container--welding">
+                    <video class="crafts-video" muted loop>
+                        <source src="{% static 'videos/welding.mp4' %}" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
+        </div>
+            
+    </section>
+
+    <section class="section section--about-us">
+
+        <div class="container-col gap--m container--max about-us-container">
+
+            <h1 class="text--color--black heading heading--main about-us-heading">About us</h1>
+
+            <div class="container-row container--wrap">
+
+                <div class="container-col container--align-start container--justify-center about-us_image-container">
+                    <img class="about-us-image" src="{% static 'images/teamwork.jpg' %}" alt="Teamwork">
+                </div>
+
+                <div class="container-col container--align-end gap--l about-us_text-container">
+    
+                    <p class="text text--justify text--color--black about-us-text">
+                        Es war einmal eine kleine Möbelmanufaktur, die von einem talentierten Tischlermeister gegründet wurde. Er war schon immer in die Kunst des Möbelbaus verliebt und hatte schon als Kind gerne im Werkstatt seines Vaters gearbeitet. Als er älter wurde, beschloss er, sein eigenes Geschäft zu eröffnen und handgefertigte Möbel von höchster Qualität herzustellen.
+                        Anfangs war es schwer für die Manufaktur, sich gegen die großen Möbelhäuser und Massenproduzenten zu behaupten. Aber der Tischlermeister gab nicht auf und setzte alles daran, seine Kunden mit seinen handgefertigten Stücken zu begeistern. Er legte großen Wert auf Tradition und Handwerkskunst, und seine Liebe zum Detail und zur Perfektion spiegelte sich in jedem seiner Möbelstücke wider.
+                        <br>
+                        <br>
+                        Mit der Zeit begann sich der Ruf der Möbelmanufaktur zu verbreiten und immer mehr Menschen schätzten die hohe Qualität und die Einzigartigkeit der handgefertigten Möbel. Die Manufaktur wuchs und entwickelte sich weiter, aber der Tischlermeister vergaß nie, was ihn dazu gebracht hatte, sein eigenes Geschäft zu gründen - die Leidenschaft für das Handwerk und die Liebe zum Detail.
+                        Heute ist die Möbelmanufaktur zu einem renommierten Unternehmen geworden, das für seine hochwertigen und einzigartigen Möbelstücke bekannt ist. Die Tradition und Handwerkskunst werden auch heute noch hoch geschätzt und die Mitarbeiter der Manufaktur sind stolz darauf, in den Fußstapfen des Tischlermeisters zu treten.
+                        Die Geschichte der Möbelmanufaktur zeigt, wie aus einer Leidenschaft und einer Liebe zum Handwerk eine erfolgreiche Geschäftsidee entstehen kann. Die Tradition und die Werte, die von Anfang an wichtig waren, haben dazu beigetragen, dass die Manufaktur heute dort ist, wo sie ist - an der Spitze der Möbelbranche, bekannt für ihre Qualität und Einzigartigkeit.
+                    </p>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section section--contact">
+
+        <div class="container-col gap--m contact-container">
+
+            <h1 class="text--color--black heading heading--main">Kontakt</h1>
+
+            <div class="container-row container--wrap container--align-start">
+
+                <div class="container-col container--max container--align-start gap--m contact_text-container">
+
+                    <p class="text text--justify text--color--black">
+                        Bei Fragen oder Problemen sind wir jederzeit für Sie da! Unser Kundenservice-Team steht Ihnen gerne zur Verfügung und hilft Ihnen bei allen Anliegen rund um unsere Produkte und Dienstleistungen. Sie können uns jederzeit per Telefon, E-Mail oder über unser Kontaktformular erreichen.
+                        Unsere erfahrenen Mitarbeiterinnen und Mitarbeiter sind darauf geschult, Ihre Fragen kompetent und zuverlässig zu beantworten. Wir legen großen Wert auf Kundenzufriedenheit und sind stets bemüht, Ihnen den bestmöglichen Service zu bieten.
+                        Zögern Sie daher nicht, uns zu kontaktieren, falls Sie Unterstützung benötigen oder Unklarheiten haben. Wir sind gerne für Sie da und freuen uns darauf, Ihnen weiterhelfen zu können. Nutzen Sie einfach unser Kontaktformular auf der Website oder rufen Sie uns an - wir sind nur einen Klick oder Anruf entfernt!
+                    </p>
+
+                    <div class="container-col container--content gap--sm">
+
+                        <a class="link text text--color--black contact-link" href="tel:123451234567">
+                            Telefon: 
+                            <br>
+                            12345/1234567</a>
+                        <a class="link text text--color--black contact-link" href="mailto:max_musterman@muster.de">
+                            Email:
+                            <br>
+                            max_musterman@muster.de</a>
+
+                    </div>
+
+                </div>
+
+                <div class="container-col container--max container--justify-center container--align-end contact_form-container">
+                    <form class="container-col container--align-center gap--m request_form">
+                        <div class="container-row container--max gap--sm">
+                            <input type="text" class="text--spacing text--color text--shadow request_input" name="first_name" placeholder="Vorname" autocomplete="off">
+                            <input type="text" class="text--spacing text--color text--shadow request_input" name="last_name" placeholder="Nachname" autocomplete="off">
+                        </div>
+                        <input type="email" class="text--spacing text--color text--shadow request_input" name="email" placeholder="Email" autocomplete="off">
+                        <textarea id="request_description_input" class="text--spacing text--color text--shadow request_input" name="description" rows="6" placeholder="Ihr Anliegen" autocomplete="off"></textarea>
+                        <button type="button" class="btn btn_request">Nachricht senden</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section section--impressum">
+
+        <div class="container-col gap--l container--align-center">
+
+            <h1 class="text--color--black heading heading--main">Impressum</h1>
+
+            <div class="container-col gap--sm">
+                <p class="text--color--black text--spacing impressum-text impressum-text--heading">Verantwortlich</p>
+                <p class="text--color--black text--spacing impressum-text">Möbelmanufaktur Mustermann</p>
+                <p class="text--color--black text--spacing impressum-text">Max Mustermann</p>
+                <p class="text--color--black text--spacing impressum-text">Musterweg 1</p>
+                <p class="text--color--black text--spacing impressum-text">12345 Musterort</p>
+            </div>
+
+            <div class="container-col gap--sm">
+                <p class="text--color--black text--spacing impressum-text impressum-text--heading">Kontakt</p>
+                <p class="text--color--black text--spacing impressum-text">Telefon: 12345/1234567</p>
+                <p class="text--color--black text--spacing impressum-text">Email: max.mustermann@muster.de</p>
+            </div>
+
+            <div class="container-col gap--sm">
+                <p class="text--color--black text--spacing impressum-text impressum-text--heading">Steuernummer</p>
+                <p class="text--color--black text--spacing impressum-text">284/384/29563</p>
+                <p class="text--color--black text--spacing impressum-text">USt-IdNr.: DE263926184</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section section--privacy_policy">
+
+        <div class="container-col container--max gap--l container--align-center">
+
+            <h1 class="text--color--black heading heading--main">Datenschutzerklärung</h1>
+
+            <div class="container-col">
+                <p class="text--color--black text--spacing text--justify privacy_policy-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda autem tempore sequi eos explicabo dicta reiciendis reprehenderit ipsa voluptas error laborum vel veniam excepturi esse et, dignissimos, obcaecati magnam neque atque quos repellat earum doloribus! Perspiciatis harum, earum dolor velit aperiam impedit fuga quasi provident quia neque ipsum, aspernatur laboriosam consectetur magnam ea sed corrupti. Voluptatem adipisci explicabo modi necessitatibus, veniam ullam magni, vel nemo nostrum in accusamus accusantium id, unde tenetur dolor? Dolores earum odio assumenda voluptates, rerum, excepturi tenetur hic, perspiciatis impedit esse iure facere quod? Tenetur molestias reprehenderit dolore labore, illo perspiciatis consequatur ipsa excepturi veniam sed sequi? Atque earum numquam sed quisquam nostrum libero incidunt nihil. Tempora recusandae quaerat modi at temporibus doloribus! Quo ab placeat quis, quia sunt dignissimos esse ipsam porro perspiciatis amet! Quibusdam autem possimus ipsum mollitia exercitationem. Iusto cum recusandae consectetur reprehenderit error, dignissimos natus! Odio sint neque, ut eum, ipsam rerum excepturi voluptatum incidunt alias quos ipsa rem. Est rerum vel quae excepturi possimus et quaerat nemo nesciunt iusto dicta! Animi dolore tempora eius harum sed distinctio iure doloremque totam molestias, quo consectetur nihil libero fuga veritatis, dolores natus at laboriosam, dolor possimus illo deleniti quas accusamus sapiente. Numquam qui nobis voluptates dolorem culpa ex quidem quasi facere eum alias quas illo, vero consectetur eveniet, aspernatur ea accusamus laborum. Quia cumque vel labore. Laboriosam cumque qui fuga voluptates corporis at possimus maxime, neque quia numquam excepturi ex temporibus molestias porro vitae asperiores iste. Tempora possimus ipsa fugit perspiciatis corporis debitis voluptates sed minus sequi nihil culpa optio, animi, est deleniti atque quam, nisi quis libero expedita reprehenderit maiores exercitationem consectetur. Odio eveniet, iusto consequuntur cupiditate unde, doloribus non esse autem quisquam atque soluta aliquid. Earum a sed dignissimos debitis, sequi, soluta modi atque officiis dolore incidunt, libero magnam corrupti. Eius, nemo delectus? Hic nihil fugit animi! Distinctio, corrupti? Quae vero neque soluta enim expedita tempora quaerat distinctio maxime, quisquam sint aspernatur dolore rem fuga asperiores, quibusdam facere pariatur exercitationem quas debitis necessitatibus esse. Vero dolorum quos soluta, dolor ullam, iure esse odit et numquam veritatis facere laborum. A ad veritatis temporibus odio facere, illo dicta sed et officiis tenetur odit sapiente dolor ullam adipisci porro, eveniet, eaque vel laboriosam accusantium! Necessitatibus asperiores deleniti alias ratione natus. Sit minima laborum repellat porro obcaecati eligendi aut hic ipsa cumque. Quaerat quis laudantium architecto adipisci iusto voluptatum et sequi excepturi, distinctio tempora quam ullam nam illum expedita sint soluta suscipit eveniet. Quod non voluptatibus, voluptate, ullam minus quasi magni aut voluptates provident, blanditiis suscipit error. Modi voluptatem dolorem nulla, officia molestiae similique, dignissimos rerum veritatis expedita quis in earum unde assumenda, explicabo doloribus ex ut sit. Animi quaerat minima a maiores. Dolorem odio cum sequi ea? Odit, omnis assumenda? Commodi, amet? Dolor, nesciunt eos voluptatem ex atque laboriosam blanditiis debitis facere itaque! Libero, eos impedit repellat tempore omnis mollitia corrupti debitis delectus aperiam veniam doloribus sapiente placeat vitae nihil consequuntur quaerat perferendis error aliquid culpa cupiditate at accusamus repudiandae consequatur minus. Facere, doloremque temporibus. Tempora tenetur quibusdam distinctio, nisi placeat magnam omnis incidunt consequatur! Nostrum nemo reprehenderit, quidem obcaecati aperiam blanditiis id tempore esse rerum dolores aliquid, officiis aspernatur, asperiores minus possimus. Quia quis at quae consequatur nihil ad dolor voluptates, assumenda beatae voluptatum, sed iusto deserunt rerum consectetur esse temporibus aliquid, sequi sint est vitae quaerat accusantium quo. Ratione ex laborum ea. Fuga mollitia accusantium explicabo aut voluptate, natus rerum officiis, excepturi reprehenderit adipisci nihil. Reprehenderit esse consectetur id quos cupiditate? Dolores iusto libero aliquid neque a, fugiat impedit voluptate rem, eveniet excepturi odio laboriosam quibusdam sapiente laborum dolorem minima id molestiae veniam, beatae quas voluptas adipisci facilis. Expedita autem dolores odit esse consectetur amet culpa officiis voluptatibus, odio officia quas exercitationem eveniet enim ratione dicta quia veniam necessitatibus incidunt perspiciatis sunt commodi. Molestiae molestias unde rerum blanditiis reiciendis quibusdam cupiditate, quisquam reprehenderit sequi alias harum veniam debitis recusandae minus esse odit voluptas? Minus, quibusdam obcaecati enim, consequatur impedit labore vitae deserunt accusamus provident distinctio nostrum expedita dolore sunt similique culpa eveniet eaque sed debitis dicta. Tempore odio facere eius est obcaecati, voluptate quaerat? Ad, quas. Quasi deleniti excepturi blanditiis repudiandae sint quam voluptates cum beatae quisquam similique asperiores ea maxime quo, quae ullam consectetur autem quibusdam veniam consequuntur minus accusamus, cumque labore! Deleniti tempore, illo, aliquam nemo soluta aliquid placeat distinctio, voluptatum illum facere sunt ea optio voluptate quisquam at quia voluptatem. Illo fugiat delectus nisi eveniet similique modi voluptates mollitia incidunt odio. Accusamus vel iste, facilis saepe reiciendis in ipsum temporibus quod eos officia, commodi quo, et architecto hic repudiandae ipsam? Laudantium dolores corrupti autem tenetur labore facere voluptate aut sapiente a harum nemo maxime non perspiciatis, inventore recusandae facilis ut, repellat praesentium, ipsum quasi quam. Modi dolores iure ex sapiente quo, non, odit tenetur veniam, repellendus pariatur ad temporibus! Maxime!0
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock content %}
