@@ -6,7 +6,7 @@ This is an illustrative website, some things can be improved or programmed using
 
 ## Demo
 
-https://dpcodingexamplefurniture.pythonanywhere.com/home
+coming soon
 
 
 ## Feedback
