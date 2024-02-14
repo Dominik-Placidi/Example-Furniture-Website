@@ -430,6 +430,7 @@ This web application was programmed in such a way that media can be optimally di
 ### Necessary changes for production operations
 
 ![ContactRequestView](./ContactRequestView.png)
+- The input values should still be validated in the frontend or alternatively in the backend.
 - The 'try' block must be commented out again here
 
 ### Explanation for approaches
