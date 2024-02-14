@@ -430,7 +430,7 @@ This web application was programmed in such a way that media can be optimally di
 ### Necessary changes for production operations
 
 ![ContactRequestView](./ContactRequestView.png)
-- --> The 'try' block must be commented out again here
+- The 'try' block must be commented out again here
 
 ### Explanation for approaches
 
