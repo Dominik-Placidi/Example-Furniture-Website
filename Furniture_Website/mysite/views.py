@@ -1,9 +1,12 @@
-from django.shortcuts import render
-from django.http import JsonResponse
+from django.shortcuts import render, redirect
 from django.core.mail import send_mail
+from django.http import JsonResponse, HttpResponseForbidden
 import json
 
 # Create your views here.
+
+def toHome(request):
+    return redirect('home')
 
 def home(request):
     return render (request, 'sites/home.html')
@@ -14,10 +17,10 @@ def ContactRequest(request):
 
         request_data = json.loads(request.body.decode('utf-8'))
 
-        first_name = request_data['first_name']
-        last_name = request_data['last_name']
-        email = request_data['email']
-        description = request_data['description']
+        first_name = request_data['Vorname']
+        last_name = request_data['Nachname']
+        email = request_data['Email']
+        description = request_data['Ihr Anliegen']
 
         try:
             #send_mail(
@@ -37,3 +40,6 @@ def ContactRequest(request):
             response = JsonResponse({'message' : f'Fehler {e}'})
             response.status_code = 500
             return response
+
+    else:
+        return HttpResponseForbidden

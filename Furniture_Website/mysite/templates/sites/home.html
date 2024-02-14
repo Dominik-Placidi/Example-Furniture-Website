@@ -67,7 +67,7 @@
 
             <div class="container-row container--wrap">
                    
-                <div class="container-col container--content crafts__media-container container--align-startn crafts_garage_img-container">
+                <div class="container-col container--content container--align-start crafts__media-container crafts__media-container--garage_img">
                     <img class="crafts-img" src="./static/images/garage.jpg" alt="">
                 </div>
 
@@ -84,13 +84,13 @@
             <div class="container-row container--wrap">
 
                 <div class="container-col container--content crafts__media-container container--align-start">
-                    <video class="crafts-video" muted loop>
+                    <video class="crafts-video" playsinline muted loop>
                         <source src="{% static 'videos/lether.mp4' %}" type="video/mp4">
                     </video>
                 </div>
 
                 <div class="container-col container--content crafts__media-container container--align-end">
-                    <video class="crafts-video" muted loop>
+                    <video class="crafts-video" playsinline muted loop>
                         <source src="{% static 'videos/saw.mp4' %}" type="video/mp4">
                     </video>
                 </div>
@@ -107,8 +107,8 @@
                     </p>
                 </div>
 
-                <div class="container-col container--content crafts__media-container container--align-end crafts_garage_img-container crafts_garage_img-container--welding">
-                    <video class="crafts-video" muted loop>
+                <div class="container-col container--content container--align-end crafts__media-container crafts__media-container--welding">
+                    <video class="crafts-video" playsinline muted loop>
                         <source src="{% static 'videos/welding.mp4' %}" type="video/mp4">
                     </video>
                 </div>
@@ -185,11 +185,11 @@
                 <div class="container-col container--max container--justify-center container--align-end contact_form-container">
                     <form class="container-col container--align-center gap--m request_form">
                         <div class="container-row container--max gap--sm">
-                            <input type="text" class="text--spacing text--color text--shadow request_input" name="first_name" placeholder="Vorname" autocomplete="off">
-                            <input type="text" class="text--spacing text--color text--shadow request_input" name="last_name" placeholder="Nachname" autocomplete="off">
+                            <input type="text" class="text--spacing text--color text--shadow request_input" placeholder="Vorname" autocomplete="do-not-autofill">
+                            <input type="text" class="text--spacing text--color text--shadow request_input" placeholder="Nachname" autocomplete="do-not-autofill">
                         </div>
-                        <input type="email" class="text--spacing text--color text--shadow request_input" name="email" placeholder="Email" autocomplete="off">
-                        <textarea id="request_description_input" class="text--spacing text--color text--shadow request_input" name="description" rows="6" placeholder="Ihr Anliegen" autocomplete="off"></textarea>
+                        <input type="email" class="text--spacing text--color text--shadow request_input" placeholder="Email" autocomplete="do-not-autofill">
+                        <textarea id="request_description_input" class="text--spacing text--color text--shadow request_input" rows="6" placeholder="Ihr Anliegen" autocomplete="do-not-autofill"></textarea>
                         <button type="button" class="btn btn_request">Nachricht senden</button>
                     </form>
                 </div>

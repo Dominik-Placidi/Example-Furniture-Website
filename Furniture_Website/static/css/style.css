@@ -17,6 +17,7 @@ ul {
 /* ----- Main-Elements ----- */
 
 .body {
+    overflow-x: hidden;
     position: relative;
     z-index: 1;
     display: flex;
@@ -28,6 +29,7 @@ ul {
 }
 
 .header {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,6 +46,7 @@ ul {
 }
 
 .main {
+    overflow-x: hidden;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -274,11 +277,19 @@ ul {
         padding: 5rem 0;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1200px) {
         
         .section {
             gap: 5rem;
             padding: 3rem 0;
+        }
+
+        .section--crafts{
+            padding-top: 0;
+        }
+
+        .section--furniture {
+            padding-bottom: 0;
         }
 
     }
@@ -324,11 +335,6 @@ ul {
             transform: scale(1);
             transition: all 0.5s ease;
             cursor: pointer;
-        }
-
-        .navbar__list-list-item:hover {
-            transform: scale(1.1);
-            opacity: 1;
         }
 
         .navbar__heading {
@@ -380,11 +386,20 @@ ul {
             transition: all 1s ease;
         }
 
-        .to_the_top-icon:hover {
-            filter: drop-shadow(0px 0px 5px black);
-        }
-
             /* ----- Responsive ----- */
+
+                @media (pointer: fine) {
+                    
+                    .navbar__list-list-item:hover {
+                        transform: scale(1.1);
+                        opacity: 1;
+                    }
+
+                    .to_the_top-icon:hover {
+                        filter: drop-shadow(0px 0px 5px black);
+                    }
+
+                }
 
                 @media screen and (max-width:767px) {
 
@@ -458,7 +473,8 @@ ul {
 
         .image-card-container {
             position: relative;
-            height: 45rem;
+            height: 43vw;
+            min-height: 220px;
         }
 
         .image-card {
@@ -468,13 +484,14 @@ ul {
             left: 0;
             transition: all 2s ease-in-out;
             width: 100%;
-            height: 100%;
+            height: inherit;
             overflow: hidden;
             border-radius: 0.5rem;
         }
         
         .image-card-img {
             width: 100%;
+            height: inherit;
             filter: brightness(0.6);
         }
 
@@ -491,19 +508,9 @@ ul {
 
             /* ----- Responsive ----- */
 
-                @media screen and (max-width: 767px) {
-                    
-                    .image-card-container {
-                        height: 13rem;
-                    }
-
-                }
-
                 @media screen and (max-width: 1200px) {
                     
-                    .image-card-container {
-                        height: 20rem;
-                    }
+                    
 
                     .furniture__text-container {
                         flex-basis: 100%;
@@ -525,14 +532,6 @@ ul {
                     .image-card-text {
                         display: none;
                     }
-                }
-
-                @media screen and (min-width: 1920px) {
-                    
-                    .image-card-container {
-                        height: 75rem;
-                    }
-
                 }
 
         /* ----- Crafts ----- */
@@ -563,9 +562,8 @@ ul {
             
                 @media screen and (max-width: 1200px) {
 
-                    .crafts_garage_img-container {
-                        flex-basis: 100%;
-                        align-items: center;
+                    .crafts__media-container--garage_img {
+                        display: none;
                     }
 
                     .crafts-text-container {
@@ -579,7 +577,9 @@ ul {
                         text-align: justify;
                     }
 
-                    .crafts_garage_img-container--welding {
+                    .crafts__media-container--welding {
+                        align-items: center;
+                        flex-basis: 100%;
                         margin-top: 4rem;
                     }
 
@@ -654,11 +654,6 @@ ul {
             transition: 1s ease ;
         }
 
-        .contact-link:hover {
-            transform: scale(1.1);
-            color: black;
-        }
-
         .contact_form-container {
             flex-basis: 50%;
             flex-grow: 1;
@@ -710,6 +705,15 @@ ul {
 
             /* ----- Responsive ----- */
 
+                @media (pointer: fine) {
+                    
+                    .contact-link:hover {
+                        transform: translate(1rem, -0.5rem) scale(1.1);
+                        color: black;
+                    }
+
+                }
+
                 @media screen and (max-width: 1400px) {
                     
                     .contact-container {
@@ -748,12 +752,16 @@ ul {
             border-bottom: 1px solid transparent;
         }
 
-        .footer-text:hover {
-            transform: scale(1.1);
-            border-bottom-color: currentColor;
-        }
-
             /* ----- Respnsive ----- */
+
+                @media (pointer: fine) {
+                    
+                    .footer-text:hover {
+                        transform: scale(1.1);
+                        border-bottom-color: currentColor;
+                    }
+
+                }
 
                 @media screen and (max-width: 1200px) {
                     

@@ -2,7 +2,6 @@ $(document).ready(function(){
    
     buttonAnimation();
     sendRequest();
-    //messageHandling();
 
 });
 
@@ -19,7 +18,7 @@ async function buttonAnimation(){
         for(let i = 0; i < inputs.length; i++){
 
             if(inputs.eq(i).val() !== ''){
-                if(inputs.eq(i).prop('name') === 'email'){
+                if(inputs.eq(i).attr('placeholder') === 'Email'){
                     if(emailRegex.test(inputs.eq(i).val())){
                         input_data.push(inputs.eq(i).val())
                     }
@@ -58,7 +57,7 @@ async function sendRequest(){
             
             for(let i = 0; i < inputs.length; i++){
 
-                formData[inputs.eq(i).prop('name')] = inputs.eq(i).val()
+                formData[inputs.eq(i).attr('placeholder')] = inputs.eq(i).val()
                 
             };
 
