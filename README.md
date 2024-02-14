@@ -429,10 +429,13 @@ This web application was programmed in such a way that media can be optimally di
 
 ### Necessary changes for production operations
 
-![ContactRequestView --> The 'try' block must be commented out again here](./ContactRequestView.png)
+![ContactRequestView](./ContactRequestView.png)
+- --> The 'try' block must be commented out again here
 
 ### Explanation for approaches
 
+![JsMessages](./Messages.png)
 - The Django message system was deliberately omitted here in order to display messages dynamically without reloading the website
 
+![RequestForm](./RequestForm.png)
 - The placeholder tag was deliberately written in German and the 'name tag' was omitted to prevent autofill as far as possible, as it leads to undesirable behavior 
