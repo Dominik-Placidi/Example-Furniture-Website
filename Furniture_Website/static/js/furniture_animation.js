@@ -16,14 +16,14 @@ async function slideAnimation(){
                 'opacity' : '1',
                 'z-index' : '99'
             });
-    
-            await new Promise(resolve => setTimeout(resolve, 7000));
-            
+
+            await new Promise(resolve => setTimeout(resolve, 3500));
+
             slides.eq(i).css({
                 'opacity' : '0',
                 'z-index' : '1'
             });
-    
+
         };
 
     };

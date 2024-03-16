@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   
+
     buttonAnimation();
     sendRequest();
 
@@ -10,7 +10,7 @@ async function buttonAnimation(){
     let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/
 
     $('.request_input').on('keyup', function(event){
-        
+
         let inputs = $('.request_input');
         let button = $('.btn_request');
         let input_data = [];
@@ -54,32 +54,32 @@ async function sendRequest(){
 
             $(this).addClass('btn--send').text('Wird gesendet...')
             $('.request_form').addClass('request_form--sending')
-            
+
             for(let i = 0; i < inputs.length; i++){
 
                 formData[inputs.eq(i).attr('placeholder')] = inputs.eq(i).val()
-                
+
             };
 
             $.ajax({
                 type: 'POST',
-                url: '/request/', 
-                data: JSON.stringify(formData),  
+                url: '/request/',
+                data: JSON.stringify(formData),
                 dataType: 'json',
                 headers: {
                     'X-CSRFToken': $('meta[name="csrf-token"]').attr('content')
                 },
                 success: function(response) {
-                    
+
                     console.log(response)
-                    
+
                     cleanForm();
-                    
+
                     createMessage(level ='success', text='Ihre Anfrage wurde versendet');
 
                 },
                 error: function(error) {
-                    
+
                     console.log(error)
 
                     cleanForm();
@@ -91,7 +91,7 @@ async function sendRequest(){
 
         }
         else{
-            
+
             for(let i = 0; i < inputs.length; i++){
 
                 if(inputs.eq(i).val() !== ''){
@@ -114,7 +114,7 @@ async function sendRequest(){
                         'animation' : 'none'
                     });
                 });
-    
+
             };
 
         }
@@ -133,18 +133,18 @@ function cleanForm(){
     form.removeClass('request_form--sending')
 
     for(let i = 0; i < inputs.length; i++){
-        
+
         inputs.eq(i).val('')
 
     };
-    
+
 };
 
 async function createMessage(level, text){
 
     let message_list = $('.message_list')
     let new_message = $('<li>' + text + '</li>')
-    
+
     new_message.addClass('messages')
 
     new_message.appendTo(message_list)
@@ -154,7 +154,7 @@ async function createMessage(level, text){
     new_message.addClass('messages--' + level)
 
     await new Promise(resolve => setTimeout(resolve, 7000));
-    
+
     new_message.addClass('messages--ending' )
 
 };
